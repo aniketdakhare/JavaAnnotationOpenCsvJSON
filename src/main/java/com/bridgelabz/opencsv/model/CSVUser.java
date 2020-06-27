@@ -16,7 +16,8 @@ public class CSVUser
     @CsvBindByName
     private String country;
 
-    public CSVUser() {
+    public CSVUser()
+    {
     }
 
     public CSVUser(String name, String email, String phoneNo, String country)
@@ -37,35 +38,43 @@ public class CSVUser
                 '}';
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getEmail() {
+    public String getEmail()
+    {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email)
+    {
         this.email = email;
     }
 
-    public String getPhoneNo() {
+    public String getPhoneNo()
+    {
         return phoneNo;
     }
 
-    public void setPhoneNo(String phoneNo) {
+    public void setPhoneNo(String phoneNo)
+    {
         this.phoneNo = phoneNo;
     }
 
-    public String getCountry() {
+    public String getCountry()
+    {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(String country)
+    {
         this.country = country;
     }
 }

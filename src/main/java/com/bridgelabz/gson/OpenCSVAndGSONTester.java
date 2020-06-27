@@ -19,10 +19,10 @@ public class OpenCSVAndGSONTester
     public static void main(String[] args) throws IOException
     {
         Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH));
-        CsvToBeanBuilder<CSVUser> csvUserCsvToBeanBuilder = new CsvToBeanBuilder(reader);
+        CsvToBeanBuilder<CSVUser> csvUserCsvToBeanBuilder = new CsvToBeanBuilder<>(reader);
         csvUserCsvToBeanBuilder.withType(CSVUser.class);
         csvUserCsvToBeanBuilder.withIgnoreLeadingWhiteSpace(true);
-        CsvToBean<CSVUser> csvToBean = new CsvToBean<>();
+        CsvToBean<CSVUser> csvToBean = csvUserCsvToBeanBuilder.build();
         List<CSVUser> csvUsers = csvToBean.parse();
         Gson gson = new Gson();
         String json = gson.toJson(csvUsers);

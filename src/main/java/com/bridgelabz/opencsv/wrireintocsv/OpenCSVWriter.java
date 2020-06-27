@@ -27,10 +27,10 @@ public class OpenCSVWriter
                 .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER).build();
 
         List<CSVUser> users = new ArrayList<>();
-        users.add(new CSVUser("Aniket Dakhare","aniketdakhare@gmail.com","9945678899","India"));
-        users.add(new CSVUser("Bharat Rawat","bharatArawat@gmail.com","9679896998","Nepal"));
-        users.add(new CSVUser("Snehal Gunde", "snhlg@gmail.com","8899899889","U.S."));
-        users.add(new CSVUser("A David", "devid@gmail.com","8899845877","Pakistan"));
+        users.add(new CSVUser("Aniket D", "aniketdakhare@gmail.com", "9945678899", "India"));
+        users.add(new CSVUser("Bharat R", "bharatArawat@gmail.com", "9679896998", "Nepal"));
+        users.add(new CSVUser("Snehal Gunde", "snhlg@gmail.com", "8899899889", "U.S."));
+        users.add(new CSVUser("A David", "devid@gmail.com", "8899845877", "Pakistan"));
 
         beanToCsv.write(users);
         beanToCsv.getCapturedExceptions();

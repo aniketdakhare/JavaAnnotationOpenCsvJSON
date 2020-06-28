@@ -35,12 +35,12 @@ public class AnnotationExample
                         //iterates all the annotation present in method
                         for (Annotation annotation : method.getDeclaredAnnotations())
                         {
-                            System.out.println("Annotation in Method '"+method+"' : "+annotation);
+                            System.out.println("Annotation in Method '" + method + "' : " + annotation);
                         }
                         MethodInfo methodInfo = method.getAnnotation(MethodInfo.class);
                         if (methodInfo.revision() == 5)
                         {
-                            System.out.println("Method with revision no. 5 = "+method);
+                            System.out.println("Method with revision no. 5 = " + method);
                         }
                     }
                     catch (Throwable ex)

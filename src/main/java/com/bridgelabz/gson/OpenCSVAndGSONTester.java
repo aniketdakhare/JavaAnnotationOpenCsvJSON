@@ -33,5 +33,4 @@ public class OpenCSVAndGSONTester
         CSVUser[] users = gson.fromJson(bufferedReader, CSVUser[].class);
         List<CSVUser> csvUserList = Arrays.asList(users);
     }
-
 }

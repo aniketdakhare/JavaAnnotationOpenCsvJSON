@@ -1,4 +1,4 @@
-package com.bridgelabz.opencsv.wrireintocsv;
+package com.bridgelabz.opencsv.services;
 
 import com.bridgelabz.opencsv.model.CSVUser;
 import com.opencsv.CSVWriter;
@@ -10,8 +10,6 @@ import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 

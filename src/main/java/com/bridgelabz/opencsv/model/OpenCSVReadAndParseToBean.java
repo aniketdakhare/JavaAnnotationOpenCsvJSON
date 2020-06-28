@@ -9,7 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
 
-public class OpenCSVReadAndParseToBean {
+public class OpenCSVReadAndParseToBean
+{
     private static final String SAMPLE_CSV_FILE_PATH = "./users-with-header.csv";
 
     public static void main(String[] args) throws IOException

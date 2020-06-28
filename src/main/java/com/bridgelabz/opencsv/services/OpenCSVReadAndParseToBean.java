@@ -1,4 +1,4 @@
-package com.bridgelabz.opencsv.readcsv;
+package com.bridgelabz.opencsv.services;
 
 import com.bridgelabz.opencsv.model.CSVUser;
 import com.opencsv.bean.CsvToBean;
